@@ -29,9 +29,6 @@ def calcbuilder():
         # print(x2)
         # print(x1 + x2)
 
-    def clear():
-        os.system('cls')
-    clear()
     raise SystemExit
 
 

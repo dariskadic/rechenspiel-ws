@@ -32,10 +32,10 @@ canvas2.pack()
 
 
 def mcalc():
-    os.system('cmd /c "start /max python3 mcalc.py"')
+    os.system('python3 mcalc.py')
 
 def pcalc():
-    os.system('cmd /c "start /max python3 pcalc.py"')
+    os.system('python3 pcalc.py')
 
 
 button1 = tk.Button(text='      Plusspiel      ', command=pcalc, bg='green', fg='white',
@@ -46,7 +46,5 @@ button2 = tk.Button(text='      Minusspiel      ', command=mcalc, bg='green', fg
                     font=('helvetica', 12, 'bold'))
 canvas2.create_window(150, 150, window=button2)
 
-root.iconbitmap('png.ico')
 root.title("Rechenspiel")
-root.state('zoomed')
 root.mainloop()
